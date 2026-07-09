@@ -1,0 +1,263 @@
+/* ===========================
+   FADE IN
+=========================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero,
+.current,
+.skills,
+.featured,
+footer{
+
+    animation:fadeUp .9s ease forwards;
+
+}
+
+/* ===========================
+   FLOATING PROFILE IMAGE
+=========================== */
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero-right img{
+
+    animation:floating 4s ease-in-out infinite;
+
+}
+
+/* ===========================
+   GLOWING LOGO
+=========================== */
+
+@keyframes glow{
+
+    0%{
+
+        text-shadow:0 0 5px #58a6ff;
+
+    }
+
+    50%{
+
+        text-shadow:
+        0 0 15px #58a6ff,
+        0 0 30px #58a6ff;
+
+    }
+
+    100%{
+
+        text-shadow:0 0 5px #58a6ff;
+
+    }
+
+}
+
+.logo{
+
+    animation:glow 3s infinite;
+
+}
+
+/* ===========================
+   BUTTON HOVER
+=========================== */
+
+.btn,
+.btn-outline{
+
+    transition:.3s;
+
+}
+
+.btn:hover,
+.btn-outline:hover{
+
+    transform:translateY(-5px) scale(1.03);
+
+}
+
+/* ===========================
+   CARD HOVER
+=========================== */
+
+.project-card,
+.card{
+
+    transition:.35s;
+
+}
+
+.project-card:hover,
+.card:hover{
+
+    transform:
+    translateY(-10px)
+    rotateX(4deg);
+
+}
+
+/* ===========================
+   SKILL HOVER
+=========================== */
+
+.skill{
+
+    transition:.3s;
+
+}
+
+.skill:hover{
+
+    transform:
+    translateY(-6px)
+    scale(1.05);
+
+}
+
+/* ===========================
+   PROGRESS BAR
+=========================== */
+
+.progress-fill{
+
+    animation:progressGrow 2s ease;
+
+}
+
+@keyframes progressGrow{
+
+    from{
+
+        width:0;
+
+    }
+
+}
+
+/* ===========================
+   LINK UNDERLINE
+=========================== */
+
+.nav-links a{
+
+    position:relative;
+
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+
+    height:2px;
+
+    left:0;
+
+    bottom:-6px;
+
+    background:#58a6ff;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover::after{
+
+    width:100%;
+
+}
+
+/* ===========================
+   IMAGE ZOOM
+=========================== */
+
+.card img{
+
+    transition:.4s;
+
+}
+
+.card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================
+   SECTION TITLE
+=========================== */
+
+section h2{
+
+    position:relative;
+
+    display:inline-block;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+section h2::after{
+
+    content:"";
+
+    width:70px;
+
+    height:4px;
+
+    border-radius:5px;
+
+    background:#58a6ff;
+
+    position:absolute;
+
+    bottom:-10px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
