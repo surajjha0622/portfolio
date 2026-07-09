@@ -1,34 +1,45 @@
+/* =======================================================
+   Portfolio Engine
+   responsive.css
+======================================================= */
+
 /* ===========================
    LARGE TABLETS
 =========================== */
 
-@media (max-width: 1024px){
+@media (max-width: 1100px){
 
-.hero{
+    .hero-content{
 
-    flex-direction:column-reverse;
-    text-align:center;
-    padding-top:140px;
+        grid-template-columns:1fr;
 
-}
+        text-align:center;
 
-.hero-left h1{
+    }
 
-    font-size:45px;
+    .hero-text{
 
-}
+        display:flex;
 
-.hero-right img{
+        flex-direction:column;
 
-    width:300px;
+        align-items:center;
 
-}
+    }
 
-.buttons{
+    .hero-image{
 
-    justify-content:center;
+        order:-1;
 
-}
+    }
+
+    .hero-image img{
+
+        width:300px;
+
+        height:300px;
+
+    }
 
 }
 
@@ -38,81 +49,89 @@
 
 @media (max-width:768px){
 
-nav{
+    section{
 
-    flex-direction:column;
-    gap:20px;
+        padding:70px 0;
 
-}
+    }
 
-.nav-links{
+    .navbar{
 
-    gap:20px;
-    flex-wrap:wrap;
-    justify-content:center;
+        height:auto;
 
-}
+        padding:18px 0;
 
-.hero{
+        flex-wrap:wrap;
 
-    min-height:auto;
+    }
 
-}
+    .menu-toggle{
 
-.hero-left h1{
+        display:block;
 
-    font-size:38px;
+    }
 
-}
+    .nav-links{
 
-.hero-left h2{
+        display:none;
 
-    font-size:20px;
+        width:100%;
 
-}
+        margin-top:20px;
 
-.hero-left p{
+        flex-direction:column;
 
-    font-size:16px;
+        gap:18px;
 
-}
+    }
 
-.hero-right img{
+    .nav-links.open{
 
-    width:250px;
+        display:flex;
 
-}
+    }
 
-section{
+    .hero-buttons{
 
-    padding:70px 20px;
+        justify-content:center;
 
-}
+    }
 
-section h2{
+    .hero-image img{
 
-    font-size:34px;
+        width:250px;
 
-}
+        height:250px;
 
-.current-grid,
-.featured-grid{
+    }
 
-    grid-template-columns:1fr;
+    .projects-grid{
 
-}
+        grid-template-columns:1fr;
 
-.skills-grid{
+    }
 
-    grid-template-columns:repeat(2,1fr);
+    .stats-grid{
 
-}
+        grid-template-columns:repeat(2,1fr);
 
-.card img{
+    }
 
-    height:200px;
+    .footer-container{
 
-}
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .footer-links,
+
+    .footer-social{
+
+        align-items:center;
+
+    }
 
 }
 
@@ -120,135 +139,114 @@ section h2{
    MOBILE
 =========================== */
 
-@media (max-width:480px){
+@media (max-width:600px){
 
-.logo{
+    h1{
 
-    font-size:28px;
+        font-size:2.5rem;
 
-}
+    }
 
-.nav-links{
+    h2{
 
-    gap:15px;
+        font-size:1.8rem;
 
-}
+    }
 
-.nav-links a{
+    .hero-image img{
 
-    font-size:15px;
+        width:200px;
 
-}
+        height:200px;
 
-.hero{
+    }
 
-    padding-top:160px;
+    .hero-buttons{
 
-}
+        flex-direction:column;
 
-.hero-left h1{
+        width:100%;
 
-    font-size:32px;
+    }
 
-}
+    .hero-buttons .btn{
 
-.hero-left h2{
+        width:100%;
 
-    font-size:18px;
+    }
 
-}
+    .stats-grid{
 
-.hero-left p{
+        grid-template-columns:1fr;
 
-    font-size:15px;
-    line-height:1.7;
+    }
 
-}
+    .project-top{
 
-.hero-right img{
+        flex-direction:column;
 
-    width:200px;
+        align-items:flex-start;
 
-}
+    }
 
-.buttons{
+    .project-buttons{
 
-    flex-direction:column;
+        flex-direction:column;
 
-}
+    }
 
-.btn,
-.btn-outline{
+    .project-buttons .btn{
 
-    width:100%;
-    text-align:center;
+        width:100%;
 
-}
+    }
 
-.skills-grid{
+    .contact-links{
 
-    grid-template-columns:1fr;
+        flex-direction:column;
 
-}
+    }
 
-section h2{
+    #backToTop{
 
-    font-size:30px;
+        right:20px;
 
-}
+        bottom:20px;
 
-.card{
-
-    padding:22px;
-
-}
-
-.card img{
-
-    height:180px;
-
-}
-
-.project-card{
-
-    padding:22px;
-
-}
-
-footer{
-
-    font-size:14px;
-
-}
+    }
 
 }
 
 /* ===========================
-   EXTRA LARGE SCREENS
+   SMALL PHONES
 =========================== */
 
-@media (min-width:1400px){
+@media (max-width:400px){
 
-.hero,
-.current-grid,
-.featured-grid,
-.skills-grid,
-nav{
+    .container{
 
-    max-width:1400px;
+        width:95%;
 
-}
+    }
 
-.hero-left h1{
+    .hero-image img{
 
-    font-size:65px;
+        width:170px;
 
-}
+        height:170px;
 
-.hero-right img{
+    }
 
-    width:420px;
+    .stat-card{
 
-}
+        padding:25px;
+
+    }
+
+    .project-content{
+
+        padding:18px;
+
+    }
 
 }
