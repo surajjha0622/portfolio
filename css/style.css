@@ -510,3 +510,23 @@ color:#58a6ff !important;
 font-weight:600;
 
 }
+
+#progress-bar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+height:4px;
+
+width:0%;
+
+background:#58a6ff;
+
+z-index:99999;
+
+transition:.1s;
+
+}
