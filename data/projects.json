@@ -1,63 +1,78 @@
 [
-  {
-    "title": "CrashLink",
-    "description": "Emergency communication system using ESP32, LTE, GPS and LoRa for accident reporting.",
-    "status": "Active",
-    "progress": 70,
-    "category": "Embedded Systems",
-    "tech": [
-      "ESP32",
-      "LoRa",
-      "GPS",
-      "LTE"
-    ],
-    "image": "assets/images/crashlink.jpg",
-    "github": "https://github.com/surajjha0622/CrashLink"
-  },
+    {
+        "id": 1,
+        "title": "CrashLink",
+        "description": "An intelligent emergency communication system using ESP32, GPS, LTE and LoRa for rapid accident reporting.",
+        "category": "Embedded Systems",
+        "status": "Active",
+        "featured": true,
+        "progress": 70,
+        "image": "assets/images/crashlink.jpg",
+        "github": "https://github.com/surajjha0622/CrashLink",
+        "demo": "",
+        "tech": [
+            "ESP32",
+            "GPS",
+            "LTE",
+            "LoRa",
+            "EasyEDA"
+        ]
+    },
 
-  {
-    "title": "HackPad",
-    "description": "Custom RP2040 MacroPad designed completely from scratch.",
-    "status": "Completed",
-    "progress": 100,
-    "category": "PCB",
-    "tech": [
-      "KiCad",
-      "PCB",
-      "RP2040",
-      "QMK"
-    ],
-    "image": "assets/images/hackpad.jpg",
-    "github": "#"
-  },
+    {
+        "id": 2,
+        "title": "HackPad",
+        "description": "A custom RP2040 mechanical macro pad designed from scratch using KiCad and QMK firmware.",
+        "category": "PCB",
+        "status": "Completed",
+        "featured": true,
+        "progress": 100,
+        "image": "assets/images/hackpad.jpg",
+        "github": "",
+        "demo": "",
+        "tech": [
+            "KiCad",
+            "PCB",
+            "RP2040",
+            "QMK"
+        ]
+    },
 
-  {
-    "title": "AI Land Survey Platform",
-    "description": "Drone based mapping software powered by AI.",
-    "status": "Prototype",
-    "progress": 30,
-    "category": "AI",
-    "tech": [
-      "Python",
-      "Flask",
-      "React"
-    ],
-    "image": "assets/images/survey.jpg",
-    "github": "#"
-  },
+    {
+        "id": 3,
+        "title": "AI Land Survey Platform",
+        "description": "Drone-based mapping and AI-powered land survey platform for accurate visualization and analysis.",
+        "category": "AI",
+        "status": "Prototype",
+        "featured": true,
+        "progress": 30,
+        "image": "assets/images/survey.jpg",
+        "github": "",
+        "demo": "",
+        "tech": [
+            "Python",
+            "Flask",
+            "React",
+            "OpenCV"
+        ]
+    },
 
-  {
-    "title": "Drone Mission Planner",
-    "description": "Mission planning software for autonomous UAVs.",
-    "status": "Active",
-    "progress": 20,
-    "category": "Drone",
-    "tech": [
-      "Python",
-      "OpenCV",
-      "ROS"
-    ],
-    "image": "assets/images/drone.jpg",
-    "github": "#"
-  }
+    {
+        "id": 4,
+        "title": "Drone Mission Planner",
+        "description": "Mission planning software for autonomous drone operations and route management.",
+        "category": "Drone",
+        "status": "Active",
+        "featured": true,
+        "progress": 20,
+        "image": "assets/images/drone.jpg",
+        "github": "",
+        "demo": "",
+        "tech": [
+            "Python",
+            "ROS",
+            "OpenCV",
+            "Leaflet"
+        ]
+    }
 ]
