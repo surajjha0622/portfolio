@@ -1,248 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suraj Kumar Jha | Portfolio</title>
 
-    <link rel="stylesheet" href="css/style.css">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/animations.css">
+    <link
+        rel="stylesheet"
+        href="css/style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="css/responsive.css">
+
+    <link
+        rel="stylesheet"
+        href="css/animations.css">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
+
+    <!-- Scroll Progress -->
+
     <div id="progress-bar"></div>
 
-<header>
+    <!-- Navbar -->
 
-<nav>
+    <div id="navbar"></div>
 
-<h2 class="logo">Suraj.</h2>
+    <main>
 
-<ul class="nav-links">
+        <!-- Hero -->
 
-<li><a href="index.html">Home</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
+        <section id="hero"></section>
 
-</ul>
+        <!-- Stats -->
 
-</nav>
+        <section id="stats"></section>
 
-</header>
+        <!-- Featured Projects -->
 
-<!-- HERO -->
+        <section id="featured-projects"></section>
 
-<section class="hero">
+        <!-- Skills -->
 
-<div class="hero-left">
+        <section id="skills"></section>
 
-<h1>Hello, I'm <span>Suraj Kumar Jha</span></h1>
+    </main>
 
-<h2>Embedded Systems • Robotics • AI</h2>
+    <!-- Footer -->
 
-<p>
+    <div id="footer"></div>
 
-I love building real-world engineering solutions combining hardware,
-software and AI. Currently working on CrashLink, AI Land Survey Platform
-and Drone Mission Planner.
+    <!-- Scripts -->
 
-</p>
+    <script src="js/utils.js"></script>
 
-<div class="buttons">
+    <script src="js/components.js"></script>
 
-<a href="projects.html" class="btn">View Projects</a>
+    <script src="js/hero.js"></script>
 
-<a href="assets/resume.pdf" class="btn-outline" download>
-Download Resume
-</a>
+    <script src="js/stats.js"></script>
 
-</div>
+    <script src="js/projects.js"></script>
 
-</div>
-
-<div class="hero-right">
-
-<img src="assets/images/profile.png" alt="Profile">
-
-</div>
-
-</section>
-
-<!-- CURRENT PROJECT -->
-
-<section class="current">
-
-<h2>Currently Building</h2>
-
-<div class="current-grid">
-
-<div class="project-card">
-
-<h3>CrashLink</h3>
-
-<p>
-Emergency crash detection system using ESP32,
-GPS, LTE and LoRa communication.
-</p>
-
-<div class="progress">
-
-<div class="progress-fill" style="width:70%;"></div>
-
-</div>
-
-<p>70% Complete</p>
-
-</div>
-
-<div class="project-card">
-
-<h3>AI Land Survey Platform</h3>
-
-<p>
-
-AI-assisted drone mapping platform for land surveys.
-
-</p>
-
-<div class="progress">
-
-<div class="progress-fill" style="width:30%;"></div>
-
-</div>
-
-<p>30% Complete</p>
-
-</div>
-
-<div class="project-card">
-
-<h3>Drone Mission Planner</h3>
-
-<p>
-
-Professional autonomous drone mission planning software.
-
-</p>
-
-<div class="progress">
-
-<div class="progress-fill" style="width:20%;"></div>
-
-</div>
-
-<p>20% Complete</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- SKILLS -->
-
-<section class="skills">
-
-<h2>Skills</h2>
-
-<div class="skills-grid">
-
-<div class="skill">Python</div>
-<div class="skill">C/C++</div>
-<div class="skill">JavaScript</div>
-<div class="skill">Arduino</div>
-<div class="skill">ESP32</div>
-<div class="skill">Raspberry Pi</div>
-<div class="skill">STM32</div>
-<div class="skill">LoRa</div>
-<div class="skill">Fusion 360</div>
-<div class="skill">HTML/CSS</div>
-<div class="skill">React</div>
-<div class="skill">Flask</div>
-<div class="skill">CSS</div>
-<div class="skill">GitHub</div>
-<div class="skill">EasyEDA</div>
-
-</div>
-
-</section>
-
-<!-- FEATURED -->
-
-<section class="featured">
-
-<h2>Featured Projects</h2>
-
-<div class="featured-grid">
-
-<div class="card">
-
-<img src="assets/images/crashlink.jpg">
-
-<h3>CrashLink</h3>
-
-<p>
-
-An intelligent emergency communication network for road accidents.
-
-</p>
-
-<a href="projects.html">Read More →</a>
-
-</div>
-
-<div class="card">
-
-<img src="assets/images/survey.jpg">
-
-<h3>AI Land Survey</h3>
-
-<p>
-
-Drone based AI platform for accurate surveying and mapping.
-
-</p>
-
-<a href="projects.html">Read More →</a>
-
-</div>
-
-<div class="card">
-
-<img src="assets/images/drone.jpg">
-
-<h3>Drone Mission Planner</h3>
-
-<p>
-
-Cross-platform software for autonomous drone missions.
-
-</p>
-
-<a href="projects.html">Read More →</a>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-<p>
-
-© 2026 Suraj Kumar Jha
-
-</p>
-
-</footer>
-
-<script src="js/main.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
+
 </html>
