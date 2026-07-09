@@ -1,5 +1,25 @@
+/* =======================================================
+   Portfolio Engine
+   animations.css
+======================================================= */
+
 /* ===========================
-   FADE IN
+   GLOBAL TRANSITIONS
+=========================== */
+
+*{
+
+    transition:
+        background-color .25s ease,
+        color .25s ease,
+        border-color .25s ease,
+        transform .25s ease,
+        box-shadow .25s ease;
+
+}
+
+/* ===========================
+   FADE UP
 =========================== */
 
 @keyframes fadeUp{
@@ -7,6 +27,7 @@
     from{
 
         opacity:0;
+
         transform:translateY(40px);
 
     }
@@ -14,24 +35,35 @@
     to{
 
         opacity:1;
+
         transform:translateY(0);
 
     }
 
 }
 
-.hero,
-.current,
-.skills,
-.featured,
-footer{
+/* ===========================
+   FADE IN
+=========================== */
 
-    animation:fadeUp .9s ease forwards;
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
 
 }
 
 /* ===========================
-   FLOATING PROFILE IMAGE
+   FLOAT
 =========================== */
 
 @keyframes floating{
@@ -44,7 +76,7 @@ footer{
 
     50%{
 
-        transform:translateY(-15px);
+        transform:translateY(-12px);
 
     }
 
@@ -56,124 +88,95 @@ footer{
 
 }
 
-.hero-right img{
+/* ===========================
+   HERO
+=========================== */
 
-    animation:floating 4s ease-in-out infinite;
+.hero-section{
+
+    animation:fadeUp .8s ease;
+
+}
+
+.hero-image img{
+
+    animation:floating 5s ease-in-out infinite;
 
 }
 
 /* ===========================
-   GLOWING LOGO
+   BUTTONS
 =========================== */
 
-@keyframes glow{
+.btn{
 
-    0%{
-
-        text-shadow:0 0 5px #58a6ff;
-
-    }
-
-    50%{
-
-        text-shadow:
-        0 0 15px #58a6ff,
-        0 0 30px #58a6ff;
-
-    }
-
-    100%{
-
-        text-shadow:0 0 5px #58a6ff;
-
-    }
+    transition:.25s;
 
 }
 
-.logo{
+.btn:hover{
 
-    animation:glow 3s infinite;
-
-}
-
-/* ===========================
-   BUTTON HOVER
-=========================== */
-
-.btn,
-.btn-outline{
-
-    transition:.3s;
+    transform:translateY(-4px);
 
 }
 
-.btn:hover,
 .btn-outline:hover{
 
-    transform:translateY(-5px) scale(1.03);
+    transform:translateY(-4px);
 
 }
 
 /* ===========================
-   CARD HOVER
+   PROJECT CARDS
 =========================== */
 
-.project-card,
-.card{
+.project-card{
 
-    transition:.35s;
+    animation:fadeUp .6s ease;
 
 }
 
-.project-card:hover,
-.card:hover{
+.project-card:hover{
 
     transform:
-    translateY(-10px)
-    rotateX(4deg);
+        translateY(-8px);
 
 }
 
 /* ===========================
-   SKILL HOVER
+   STAT CARDS
 =========================== */
 
-.skill{
+.stat-card{
 
-    transition:.3s;
+    animation:fadeUp .7s ease;
 
 }
 
-.skill:hover{
+.stat-card:hover{
 
-    transform:
-    translateY(-6px)
-    scale(1.05);
+    transform:translateY(-8px);
 
 }
 
 /* ===========================
-   PROGRESS BAR
+   TECH STACK
 =========================== */
 
-.progress-fill{
+.tech-stack span{
 
-    animation:progressGrow 2s ease;
+    transition:.2s;
 
 }
 
-@keyframes progressGrow{
+.tech-stack span:hover{
 
-    from{
-
-        width:0;
-
-    }
+    transform:translateY(-3px);
 
 }
 
 /* ===========================
-   LINK UNDERLINE
+   NAVBAR LINKS
 =========================== */
 
 .nav-links a{
@@ -188,76 +191,68 @@ footer{
 
     position:absolute;
 
-    width:0;
-
-    height:2px;
-
     left:0;
 
     bottom:-6px;
 
-    background:#58a6ff;
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
 
     transition:.3s;
 
 }
 
-.nav-links a:hover::after{
+.nav-links a:hover::after,
+
+.nav-links a.active::after{
 
     width:100%;
 
 }
 
 /* ===========================
-   IMAGE ZOOM
+   SCROLLBAR
 =========================== */
 
-.card img{
+::-webkit-scrollbar-thumb{
 
-    transition:.4s;
-
-}
-
-.card:hover img{
-
-    transform:scale(1.05);
+    transition:.25s;
 
 }
 
 /* ===========================
-   SECTION TITLE
+   BACK TO TOP
 =========================== */
 
-section h2{
+#backToTop{
 
-    position:relative;
-
-    display:inline-block;
-
-    left:50%;
-
-    transform:translateX(-50%);
+    transition:.3s;
 
 }
 
-section h2::after{
+#backToTop:hover{
 
-    content:"";
+    transform:
+        translateY(-5px)
+        scale(1.08);
 
-    width:70px;
+}
 
-    height:4px;
+/* ===========================
+   FADE CLASS
+=========================== */
 
-    border-radius:5px;
+.fade-in{
 
-    background:#58a6ff;
+    animation:fadeIn .7s ease;
 
-    position:absolute;
+}
 
-    bottom:-10px;
+.fade-up{
 
-    left:50%;
-
-    transform:translateX(-50%);
+    animation:fadeUp .7s ease;
 
 }
