@@ -1,0 +1,161 @@
+/*=====================
+        LARGE TABLETS   
+======================*/
+
+@media (max-width: 1024px) {
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        padding-top:140px;
+    }
+    .hero-left h1{
+        font-size:45px;
+    }
+    .hero-right img{
+        width:300px;
+
+    }
+    .buttons{
+        justify-content:center;
+    }
+}
+
+/*=====================
+        TABLETS  
+======================*/
+
+@media (max-width: 768px) {
+    nav{
+        flex-direction:column;
+        gap:20px;
+    }
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+    }
+    .hero{
+        min-height:auto;
+    }
+    .hero-left h1{
+        font-size:38px;
+    }
+    .hero-left h2{
+        font-size:20px;
+    }
+    .hero-left img{
+        width:250px;
+    }
+    section{
+        padding:70px 20px;
+
+    }
+    section h2{
+        font-size:34px;
+
+    }
+    .current-grid,
+    .featured-grid{
+        grid-template-columns:1fr;
+
+    }
+
+    .card img{
+        height:200px;
+    }
+}
+/*=====================
+        MOBILE   
+======================*/
+
+@media(max-width: 480px){
+    .logo{
+        font-size:28px;
+
+    }
+    .nav-links{
+        gap:15px;
+
+    }
+    .nav-links a{
+        font-size:15px;
+
+    }
+    .hero{
+        padding-top:160px;
+    }
+    .hero-left h1{
+        font-size:32px;
+
+    }
+    .hero-left h2{
+        font-size:18px;
+
+    }
+    .hero-left p{
+        font-size:15px;
+        line-height:1.7;
+
+    }
+
+    .hero-right img{
+        width:200px;
+
+    }
+    .buttons{
+        flex-direction:column;
+        
+    }
+    .btn,
+    .btn-outline{
+        width:100%;
+        text-align:center;
+
+    }
+    .skills-grid{
+        grid-template-columns:1fr;
+
+    }
+    section h2{
+        font-size:30px;
+
+    }
+    .card{
+        padding:22px;
+
+    }
+    .card img{
+        height:180px;
+
+    }
+    .project-card{
+        padding:22px;
+
+    }
+    footer{
+        font-size:14px;
+    }
+}
+/*=====================
+  EXTRA LARGE SCREENS   
+======================*/
+
+@media (min-width: 1400px){
+
+    .hero,
+    .current-grid,
+    .featured-grid,
+    .skills-grid,
+    nav{
+        max-width:1400px;
+
+    }
+    .hero-left h1{
+        font-size:65px;
+
+    }
+    .hero-right img{
+        width:420px;
+
+    }
+}
