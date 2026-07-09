@@ -3,62 +3,82 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-<title>Projects | Suraj Kumar Jha</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="css/animations.css">
+    <title>Projects</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
 
 </head>
 
 <body>
+
+    <!-- Scroll Progress -->
+
     <div id="progress-bar"></div>
 
-<header>
+    <!-- Navbar -->
 
-<nav>
+    <div id="navbar"></div>
 
-<h2 class="logo">Suraj.</h2>
+    <main>
 
-<ul class="nav-links">
+        <section class="page-title">
 
-<li><a href="index.html">Home</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
+            <div class="container">
 
-</ul>
+                <h1>Projects</h1>
 
-</nav>
+                <p>
 
-</header>
+                    A collection of my work in embedded systems,
+                    robotics, PCB design, AI, drones and software
+                    development.
 
+                </p>
 
-<section class="featured">
+            </div>
 
-<h2>My Projects</h2>
+        </section>
 
-<div id="projects-container" class="featured-grid"></div>
+        <!-- Projects Render Here -->
 
-</section>
+        <section>
 
+            <div class="container">
 
-<footer>
+                <div id="projects-container"></div>
 
-<p>
+            </div>
 
-© 2026 Suraj Kumar Jha
+        </section>
 
-</p>
+    </main>
 
-</footer>
+    <!-- Footer -->
 
-<script src="js/projects.js"></script>
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+
+    <script src="js/utils.js"></script>
+
+    <script src="js/components.js"></script>
+
+    <script src="js/projects.js"></script>
+
+    <script src="js/app.js"></script>
 
 </body>
 
