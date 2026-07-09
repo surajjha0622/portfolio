@@ -1,0 +1,63 @@
+[
+  {
+    "title": "CrashLink",
+    "description": "Emergency communication system using ESP32, LTE, GPS and LoRa for accident reporting.",
+    "status": "Active",
+    "progress": 70,
+    "category": "Embedded Systems",
+    "tech": [
+      "ESP32",
+      "LoRa",
+      "GPS",
+      "LTE"
+    ],
+    "image": "assets/images/crashlink.jpg",
+    "github": "https://github.com/surajjha0622/CrashLink"
+  },
+
+  {
+    "title": "HackPad",
+    "description": "Custom RP2040 MacroPad designed completely from scratch.",
+    "status": "Completed",
+    "progress": 100,
+    "category": "PCB",
+    "tech": [
+      "KiCad",
+      "PCB",
+      "RP2040",
+      "QMK"
+    ],
+    "image": "assets/images/hackpad.jpg",
+    "github": "#"
+  },
+
+  {
+    "title": "AI Land Survey Platform",
+    "description": "Drone based mapping software powered by AI.",
+    "status": "Prototype",
+    "progress": 30,
+    "category": "AI",
+    "tech": [
+      "Python",
+      "Flask",
+      "React"
+    ],
+    "image": "assets/images/survey.jpg",
+    "github": "#"
+  },
+
+  {
+    "title": "Drone Mission Planner",
+    "description": "Mission planning software for autonomous UAVs.",
+    "status": "Active",
+    "progress": 20,
+    "category": "Drone",
+    "tech": [
+      "Python",
+      "OpenCV",
+      "ROS"
+    ],
+    "image": "assets/images/drone.jpg",
+    "github": "#"
+  }
+]
