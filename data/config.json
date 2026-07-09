@@ -1,0 +1,62 @@
+{
+    "site": {
+        "title": "Suraj Kumar Jha",
+        "description": "Personal Portfolio"
+    },
+
+    "hero": {
+        "name": "Suraj Kumar Jha",
+        "tagline": "Building intelligent hardware & software systems.",
+        "subtitle": "Embedded Systems • Robotics • AI • PCB Design",
+        "profileImage": "assets/images/profile.png"
+    },
+
+    "buttons": [
+        {
+            "text": "View Projects",
+            "link": "projects.html",
+            "type": "primary"
+        },
+        {
+            "text": "GitHub",
+            "link": "https://github.com/surajjha0622",
+            "type": "secondary"
+        }
+    ],
+
+    "socials": {
+        "github": "https://github.com/surajjha0622",
+        "linkedin": "",
+        "email": "",
+        "location": "Bihar, India"
+    },
+
+    "stats": {
+        "projects": 12,
+        "activeProjects": 4,
+        "technologies": 18,
+        "years": 3
+    },
+
+    "skills": [
+        "ESP32",
+        "STM32",
+        "Arduino",
+        "Python",
+        "C++",
+        "Flask",
+        "React",
+        "JavaScript",
+        "LoRa",
+        "GPS",
+        "Fusion 360",
+        "EasyEDA",
+        "KiCad",
+        "Git",
+        "GitHub"
+    ],
+
+    "footer": {
+        "copyright": "© 2026 Suraj Kumar Jha"
+    }
+}
