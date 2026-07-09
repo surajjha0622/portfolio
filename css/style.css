@@ -483,3 +483,30 @@ color:#facc15;
 color:#38bdf8;
 
 }
+
+/* ===========================
+CONTACT
+=========================== */
+
+.contact-links{
+
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+margin-top:35px;
+
+}
+
+.contact-links a{
+
+text-decoration:none;
+
+}
+
+.active{
+
+color:#58a6ff !important;
+
+font-weight:600;
+
+}
