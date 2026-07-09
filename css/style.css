@@ -418,3 +418,68 @@ footer{
     color:white;
 
 }
+
+/* ===========================
+   TECH STACK
+=========================== */
+
+.tech-stack{
+
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+margin:20px 0;
+
+}
+
+.tech-stack span{
+
+background:#161b22;
+padding:8px 15px;
+border-radius:30px;
+font-size:14px;
+color:#58a6ff;
+border:1px solid rgba(88,166,255,.25);
+
+}
+
+/* ===========================
+   PROJECT BUTTONS
+=========================== */
+
+.project-buttons{
+
+display:flex;
+gap:15px;
+margin-top:20px;
+
+}
+
+/* ===========================
+   STATUS
+=========================== */
+
+.status{
+
+font-weight:600;
+margin-top:10px;
+
+}
+
+.active{
+
+color:#22c55e;
+
+}
+
+.prototype{
+
+color:#facc15;
+
+}
+
+.completed{
+
+color:#38bdf8;
+
+}
