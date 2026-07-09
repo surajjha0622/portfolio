@@ -1,84 +1,180 @@
-// ================================
-// LOAD PROJECTS FROM JSON
-// ================================
+// =============================================
+// Portfolio Engine
+// projects.js
+// Renders Featured Projects & All Projects
+// =============================================
 
-async function loadProjects() {
+async function renderProjects() {
 
-    try {
+    const projects = await Portfolio.getProjects();
 
-        const response = await fetch("data/projects.json");
-        const projects = await response.json();
+    if (!projects) return;
 
-        const container = document.getElementById("projects-container");
+    // Home Page Featured Section
+    const featuredContainer = document.getElementById("featured-projects");
 
-        if (!container) return;
+    if (featuredContainer) {
 
-        container.innerHTML = "";
+        const featured = projects.filter(project => project.featured);
 
-        projects.forEach(project => {
+        featuredContainer.innerHTML = `
 
-            const techStack = project.tech
-                .map(tech => `<span>${tech}</span>`)
-                .join("");
+<section class="projects-section">
 
-            const statusColor =
-                project.status === "Completed"
-                    ? "#38bdf8"
-                    : project.status === "Prototype"
-                    ? "#facc15"
-                    : "#22c55e";
+    <div class="container">
 
-            const card = document.createElement("div");
+        <div class="section-header">
 
-            card.className = "card";
+            <h2>Featured Projects</h2>
 
-            card.innerHTML = `
+            <p>
+                A selection of projects I'm currently working on or proud of.
+            </p>
 
-                <img src="${project.image}" alt="${project.title}">
+        </div>
 
-                <h3>${project.title}</h3>
+        <div class="projects-grid">
 
-                <p>${project.description}</p>
+            ${featured.map(createProjectCard).join("")}
 
-                <div class="tech-stack">
-                    ${techStack}
-                </div>
+        </div>
 
-                <p style="color:${statusColor}; font-weight:600;">
-                    ${project.status}
-                </p>
+    </div>
 
-                <div class="progress">
-                    <div class="progress-fill"
-                    style="width:${project.progress}%"></div>
-                </div>
+</section>
 
-                <p>${project.progress}% Complete</p>
-
-                <div class="project-buttons">
-
-                    <a href="${project.github}"
-                    target="_blank"
-                    class="btn">
-                        GitHub
-                    </a>
-
-                </div>
-
-            `;
-
-            container.appendChild(card);
-
-        });
+`;
 
     }
 
-    catch (error) {
+    // Projects Page
+    const projectsContainer = document.getElementById("projects-container");
 
-        console.error(error);
+    if (projectsContainer) {
+
+        projectsContainer.innerHTML = `
+
+<div class="projects-grid">
+
+    ${projects.map(createProjectCard).join("")}
+
+</div>
+
+`;
 
     }
 
 }
 
-loadProjects();
+// =============================================
+// Creates One Project Card
+// =============================================
+
+function createProjectCard(project) {
+
+    let badgeColor = "badge-blue";
+
+    if (project.status === "Active")
+        badgeColor = "badge-green";
+
+    if (project.status === "Prototype")
+        badgeColor = "badge-yellow";
+
+    return `
+
+<div class="project-card">
+
+    <div class="project-image">
+
+        <img
+            src="${project.image}"
+            alt="${project.title}"
+            onerror="this.src='assets/images/placeholder.png'">
+
+    </div>
+
+    <div class="project-content">
+
+        <div class="project-top">
+
+            <h3>${project.title}</h3>
+
+            <span class="status ${badgeColor}">
+
+                ${project.status}
+
+            </span>
+
+        </div>
+
+        <p class="project-description">
+
+            ${project.description}
+
+        </p>
+
+        <div class="tech-stack">
+
+            ${project.tech.map(tech => `
+
+                <span>${tech}</span>
+
+            `).join("")}
+
+        </div>
+
+        <div class="progress">
+
+            <div
+                class="progress-fill"
+                style="width:${project.progress}%">
+
+            </div>
+
+        </div>
+
+        <p class="progress-text">
+
+            ${project.progress}% Complete
+
+        </p>
+
+        <div class="project-buttons">
+
+            ${project.github !== "" ? `
+
+            <a
+                href="${project.github}"
+                target="_blank"
+                class="btn">
+
+                GitHub
+
+            </a>
+
+            ` : ""}
+
+            ${project.demo !== "" ? `
+
+            <a
+                href="${project.demo}"
+                target="_blank"
+                class="btn btn-outline">
+
+                Live Demo
+
+            </a>
+
+            ` : ""}
+
+        </div>
+
+    </div>
+
+</div>
+
+`;
+
+}
+
+document.addEventListener("DOMContentLoaded", renderProjects);
