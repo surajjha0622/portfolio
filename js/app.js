@@ -1,8 +1,5 @@
-// =============================================
-// Portfolio Engine
 // app.js
 // Global Website Functionality
-// =============================================
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -14,9 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-// =============================================
 // ACTIVE NAVIGATION
-// =============================================
 
 function initializeNavbar() {
 
@@ -42,9 +37,8 @@ function initializeNavbar() {
 
 }
 
-// =============================================
 // SCROLL PROGRESS BAR
-// =============================================
+
 
 function initializeScrollProgress() {
 
@@ -68,9 +62,7 @@ function initializeScrollProgress() {
 
 }
 
-// =============================================
 // BACK TO TOP BUTTON
-// =============================================
 
 function initializeBackToTop() {
 
