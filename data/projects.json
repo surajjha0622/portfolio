@@ -28,7 +28,7 @@
         "featured": true,
         "progress": 100,
         "image": "assets/images/hackpad.jpg",
-        "github": "",
+        "github": "https://github.com/surajjha0622/HackPad",
         "demo": "",
         "tech": [
             "KiCad",
@@ -47,7 +47,7 @@
         "featured": true,
         "progress": 30,
         "image": "assets/images/survey.jpg",
-        "github": "",
+        "github": "https://github.com/surajjha0622/",
         "demo": "",
         "tech": [
             "Python",
@@ -66,7 +66,7 @@
         "featured": true,
         "progress": 20,
         "image": "assets/images/drone.jpg",
-        "github": "",
+        "github": "https://github.com/surajjha0622/",
         "demo": "",
         "tech": [
             "Python",
