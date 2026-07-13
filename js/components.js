@@ -1,8 +1,5 @@
-// =============================================
-// Portfolio Engine
 // components.js
 // Loads reusable HTML components
-// =============================================
 
 class ComponentLoader {
 
