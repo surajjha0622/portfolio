@@ -1,8 +1,5 @@
-// =============================================
-// Portfolio Engine
 // stats.js
 // Renders Homepage Statistics
-// =============================================
 
 async function renderStats() {
 
