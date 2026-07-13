@@ -1,8 +1,5 @@
-// =============================================
-// Portfolio Engine
 // hero.js
 // Renders Hero Section
-// =============================================
 
 async function renderHero() {
 
