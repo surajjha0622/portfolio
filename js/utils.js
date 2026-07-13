@@ -1,8 +1,5 @@
-// =============================================
-// Portfolio Engine
 // utils.js
 // Loads JSON files and caches them
-// =============================================
 
 class PortfolioUtils {
 
@@ -13,9 +10,7 @@ class PortfolioUtils {
 
     }
 
-    // ==========================
     // Load Config
-    // ==========================
 
     async getConfig() {
 
@@ -47,9 +42,7 @@ class PortfolioUtils {
 
     }
 
-    // ==========================
     // Load Projects
-    // ==========================
 
     async getProjects() {
 
