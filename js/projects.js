@@ -1,8 +1,5 @@
-// =============================================
-// Portfolio Engine
 // projects.js
 // Renders Featured Projects & All Projects
-// =============================================
 
 async function renderProjects() {
 
@@ -66,9 +63,7 @@ async function renderProjects() {
 
 }
 
-// =============================================
 // Creates One Project Card
-// =============================================
 
 function createProjectCard(project) {
 
