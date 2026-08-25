@@ -75,9 +75,9 @@
             "C",
             "Fusion 360"
         ]
-    }
+    },
 
-     {
+    {
         "id": 5,
         "title": "RC Fixed-Wing Aircraft",
         "description": "I built a depron fixed-wing aircraft and learned practical aerodynamics, control-surface integration, flight testing, and build iteration.",
