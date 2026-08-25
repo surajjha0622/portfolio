@@ -6,7 +6,7 @@
         "category": "Embedded Systems",
         "status": "Active",
         "featured": true,
-        "progress": 70,
+        "progress": 60,
         "image": "assets/images/crashlink.jpg",
         "github": "https://github.com/surajjha0622/CrashLink",
         "demo": "",
@@ -24,9 +24,9 @@
         "title": "HackPad",
         "description": "A custom RP2040 mechanical macro pad designed from scratch using KiCad and QMK firmware.",
         "category": "PCB",
-        "status": "Completed",
+        "status": "Active",
         "featured": true,
-        "progress": 100,
+        "progress": 90,
         "image": "assets/images/hackpad.jpg",
         "github": "https://github.com/surajjha0622/HackPad",
         "demo": "",
@@ -43,9 +43,9 @@
         "title": "AI Land Survey Platform",
         "description": "Drone-based mapping and AI-powered land survey platform for accurate visualization and analysis.",
         "category": "AI",
-        "status": "Prototype",
+        "status": "Ideation",
         "featured": true,
-        "progress": 30,
+        "progress": 10,
         "image": "assets/images/survey.jpg",
         "github": "https://github.com/surajjha0622/",
         "demo": "",
@@ -59,20 +59,37 @@
 
     {
         "id": 4,
-        "title": "Drone Mission Planner",
-        "description": "Mission planning software for autonomous drone operations and route management.",
-        "category": "Drone",
-        "status": "Active",
+        "title": "Panic Button Alert System",
+        "description": "Sending Emergency alerts using panic button via LoRa Mesh networking.",
+        "category": "Wireless System",
+        "status": "Completed",
         "featured": true,
-        "progress": 20,
-        "image": "assets/images/drone.jpg",
+        "progress": 100,
+        "image": "assets/images/EmergencyAlert.jpg",
         "github": "https://github.com/surajjha0622/",
         "demo": "",
         "tech": [
-            "Python",
-            "ROS",
-            "OpenCV",
-            "Leaflet"
+            "LoRa",
+            "ESP32",
+            "Arduino Nano",
+            "C",
+            "Fusion 360"
+        ]
+    }
+
+     {
+        "id": 5,
+        "title": "RC Fixed-Wing Aircraft",
+        "description": "I built a depron fixed-wing aircraft and learned practical aerodynamics, control-surface integration, flight testing, and build iteration.",
+        "category": "RC Plane",
+        "status": "Completed",
+        "featured": true,
+        "progress": 100,
+        "image": "assets/images/RCPlane.jpg",
+        "github": "https://github.com/surajjha0622/",
+        "demo": "",
+        "tech": [
+            "Aerodynamics"
         ]
     }
 ]
