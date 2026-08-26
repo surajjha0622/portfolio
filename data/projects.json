@@ -7,7 +7,7 @@
         "status": "Active",
         "featured": true,
         "progress": 60,
-        "image": "assets/images/crashlink.jpg",
+        "image": "assets/images/crashlink.png",
         "github": "https://github.com/surajjha0622/CrashLink",
         "demo": "",
         "tech": [
@@ -27,7 +27,7 @@
         "status": "Active",
         "featured": true,
         "progress": 90,
-        "image": "assets/images/hackpad.jpg",
+        "image": "assets/images/Hackpad.png",
         "github": "https://github.com/surajjha0622/HackPad",
         "demo": "",
         "tech": [
