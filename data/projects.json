@@ -39,7 +39,7 @@
     },
 
     {
-        "id": 3,
+        "id": 5,
         "title": "AI Land Survey Platform",
         "description": "Drone-based mapping and AI-powered land survey platform for accurate visualization and analysis.",
         "category": "AI",
@@ -78,7 +78,7 @@
     },
 
     {
-        "id": 5,
+        "id": 3,
         "title": "RC Fixed-Wing Aircraft",
         "description": "I built a depron fixed-wing aircraft and learned practical aerodynamics, control-surface integration, flight testing, and build iteration.",
         "category": "RC Plane",
