@@ -7,7 +7,7 @@
         "status": "Active",
         "featured": true,
         "progress": 60,
-        "image": "assets/images/crashlink.png",
+        "image": "assets/images/CrashLink.png",
         "github": "https://github.com/surajjha0622/CrashLink",
         "demo": "",
         "tech": [
@@ -27,7 +27,7 @@
         "status": "Active",
         "featured": true,
         "progress": 90,
-        "image": "assets/images/Hackpad.png",
+        "image": "assets/images/HackPad.png",
         "github": "https://github.com/surajjha0622/HackPad",
         "demo": "",
         "tech": [
@@ -46,7 +46,7 @@
         "status": "Ideation",
         "featured": true,
         "progress": 10,
-        "image": "assets/images/survey.jpg",
+        "image": "assets/images/AI_Land_Survey.jpg",
         "github": "https://github.com/surajjha0622/",
         "demo": "",
         "tech": [
@@ -65,7 +65,7 @@
         "status": "Completed",
         "featured": true,
         "progress": 100,
-        "image": "assets/images/EmergencyAlert.jpg",
+        "image": "assets/images/EmergencyAlert.jpeg",
         "github": "https://github.com/surajjha0622/",
         "demo": "",
         "tech": [
@@ -85,7 +85,7 @@
         "status": "Completed",
         "featured": true,
         "progress": 100,
-        "image": "assets/images/RCPlane.jpg",
+        "image": "assets/images/RCPlane.jpeg",
         "github": "https://github.com/surajjha0622/",
         "demo": "",
         "tech": [
