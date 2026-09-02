@@ -27,7 +27,7 @@
         "status": "Active",
         "featured": true,
         "progress": 90,
-        "image": "assets/images/HackPad.png",
+        "image": "assets/images/Hackpad.png",
         "github": "https://github.com/surajjha0622/HackPad",
         "demo": "",
         "tech": [
